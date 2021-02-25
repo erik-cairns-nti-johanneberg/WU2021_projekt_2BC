@@ -1,0 +1,55 @@
+*{
+    margin: 0% ;
+}
+
+/*mobile*/ 
+@media screen and (max-width: 767px){
+
+    .site_wrapper{
+        display: grid;
+        height: 100%;
+        width: 100%;
+
+        grid-template-areas: 
+        'he'
+        'ma'
+        'a1'
+        'fo'
+        ;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 50vh 40vh 5vh;
+    }
+    .he_m{
+        background-color: wheat;
+        grid-area: he;
+    }
+    .ma_m{
+        background-color: yellow;
+        grid-area: ma;
+    }
+    .a1_m{
+        background-color: violet;
+        grid-area: a1;
+    }
+    .fo_m{
+        background-color: aquamarine;
+        grid-area: fo;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+/*Desktop*/
+@media screen and (max-width: 767px){
+
+
+}
+
