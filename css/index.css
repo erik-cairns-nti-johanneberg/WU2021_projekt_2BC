@@ -2,50 +2,102 @@
     margin: 0% ;
 }
 
-/*mobile*/ 
-@media screen and (max-width: 767px){
+/*mobile @media screen and (max-width: 767px){*/ 
+    
+.wrapper_m{
+    display: grid;
+    grid-template-areas: 
+    'he'
+    'ma'
+    'fo';
+    grid-template-columns: 100vw;
+    grid-template-rows: 11vh 100vh 9vh;
+}
+    
 
-    .site_wrapper{
-        display: grid;
-        height: 100%;
-        width: 100%;
+.he_m{
+    background-color: wheat;
+    grid-area: he;
+    display: flex;
+    height: 12vh;
+}
 
-        grid-template-areas: 
-        'he'
-        'ma'
-        'a1'
-        'fo'
-        ;
+.logga{
+    width: 70vw;
+    height: 7vh;
+    justify-self: flex-start;
+    margin-top: 10px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+} 
 
-        grid-template-columns: 100%;
-        grid-template-rows: 10vh 50vh 40vh 5vh;
-    }
-    .he_m{
-        background-color: wheat;
-        grid-area: he;
-    }
-    .ma_m{
-        background-color: yellow;
-        grid-area: ma;
-    }
-    .a1_m{
-        background-color: violet;
-        grid-area: a1;
-    }
-    .fo_m{
-        background-color: aquamarine;
-        grid-area: fo;
-    }
+.menu_button{
+    max-height: 10vh;
+}
 
+#menu{
+    width: 15vw;
+    height: 8vh;
+    margin: 4px;
+    margin-left: 5vw;
+}
 
+.ma_m{
+    background-color: yellow;
+    grid-area: ma;
+}
 
+#bildspel{
+    height: 30vh;
+    width: 85vw;
+    margin: 20px auto;
+    border: orchid 3px solid;
+}
 
+.a1_m{
+    height: 42vh;
+    width: 80vw;
+    margin: 0 auto;
+    border: orchid 3px solid;   
+    
+}
+.a1_m > h2{
+    padding-left: 20vw;
+    padding-top: 3vh;
+}
 
-
-
+.a1_m > p{
+    padding-left: 6vw;
+    padding-top: 2vh;
+    padding-right: 6vw;
 }
 
 
+.fo_m{
+    background-color: blue;
+    grid-area: fo;
+    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'co f1 ko'
+    'co f2 ko'
+    'co f3 ko'
+    ;
+    grid-template-columns: 30vw 35vw 35vw;
+    grid-template-rows: repeat(3, 3vh)
+}
+
+.företag_1_div{
+    grid-area: f1;
+}
+.företag_2_div{
+    grid-area: f2;
+}
+
+.fo_m>div{
+    margin-left: 80px;
+}
 
 /*Desktop*/
 @media screen and (max-width: 767px){

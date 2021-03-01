@@ -1,8 +1,6 @@
+document.querySelector("menu_button").addEventListener("click", "show_menu")
 
-
-
-document.querySelector(".din_knapps_klass").addEventListener("click", dinFunktion)
-
-function dinFunktion() {
-    document.querySelector("taggen_du_vill_påverka").classList.toggle("klassen_du_togglar")
+function show_menu() {
+    document.querySelector("fade_layer").classList.toggle("show")
 }
+
