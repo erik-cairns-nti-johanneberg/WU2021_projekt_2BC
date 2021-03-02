@@ -95,10 +95,14 @@
     grid-area: f2;
 }
 
-.fo_m>div{
-    margin-left: 80px;
+.företag_3_div{
+    grid-area: f3;
 }
 
+.footer_kontakt{
+    grid-area: ko;
+    padding: 10px;
+}
 /*Desktop*/
 @media screen and (max-width: 767px){
 
