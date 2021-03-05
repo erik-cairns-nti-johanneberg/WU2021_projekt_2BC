@@ -8,41 +8,40 @@
 
     <script src=js\index.js ></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
 <!-- mobile_1 -->
 <div class="wrapper_m">
     <header class="he_m">
-
         <figure>
         <img class="logga" src="misc/mobile_1.jpg" alt="Logga">
         </figure>
 
         <div class="menu_button">
-          <img id="menu" src="img/menu_botton.png" alt="menu_button">
+          <img class="menu" src="img/menu_botton.png" alt="menu_button">
         </div>
+    </header>    
 
-        
-        <nav class="hidden_menu">
+    <nav class= "hidden_nav">
+        <a href="#">Länk 1</a>
+        <a href="#">länk 2</a>
+        <a href="#">länk 3</a>
+        <a href="#">länk 4</a>
+        <a href="#">länk 5</a>
+        <a href="#">länk 6</a>
+    </nav>
 
-            <ul class="hidden_bois">
-                <li><a href="#">Länk 1</a> </li>
-                <li><a href="#">Länk 2</a> </li>
-                <li><a href="#">Länk 3</a> </li>
-                <li><a href="#">Länk 4</a> </li>
-                <li><a href="#">Länk 5</a> </li>
-                <li><a href="#">Länk 6</a> </li>
-            </ul>
-
-
-        </nav>
-
-    </header>
+    <nav class= "desknav">
+        <a href="#">Länk 1</a>
+        <a href="#">länk 2</a>
+        <a href="#">länk 3</a>
+        <a href="#">länk 4</a>
+        <a href="#">länk 5</a>
+        <a href="#">länk 6</a>
+    </nav>
 
     <main class="ma_m">
-
-
-
 
         <div>
             <img class="mySlides" src= misc/desktop_1.jpg>
@@ -50,10 +49,29 @@
             <img class="mySlides" src= misc/desktop_3.jpg>   
         </div>
 
+        <script> 
+            var myIndex = 0;                                                          
+            carousel();                                                     
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000);                                  
+            }
+    
+        </script>
+
 
         <article class="a1_m">
             <h2>Välkommen till Fånarna på Farmen!</h2>
-            <p>text o text o lite mer rolig text Lorem ipsum, dolor sit amet consectetur adipisicing it? Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur voluptates recusandae provident. Maxime commodi id ipsam consequatur laboriosam sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum perspiciatis ex ullam natus quo, eveniet nemo illo! Quo odit ad, nihil amet autem aliquam magni ut laboriosam voluptatum laudantium?</p>
+            <p>text o text o lite mer eeeeeeeeeeeeeeeeeeeeeex rolig text Lorem ipsum, dolor sit amet consectetur adipisicing it? Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur voluptates recusandae provident. Maxime commodi id ipsam consequatur laboriosam sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum perspiciatis ex ullam natus quo, eveniet nemo illo! Quo odit ad, nihil amet autem aliquam magni ut laboriosam voluptatum laudantium?</p>
+
         </article>
 
 
@@ -71,10 +89,6 @@
        
        <section class="footer_kontakt"><p>telefon: 900000 </p> <p>Mail:<a href="#">Mail</a> </p> <p> <a href="#">Hitta hit</a> </p> </section>
     </footer>
-
-
-
-
 
 
 </div>
