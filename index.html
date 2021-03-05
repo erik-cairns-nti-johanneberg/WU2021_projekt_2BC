@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
 
+    <script src=js\index.js ></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -20,18 +21,38 @@
         <div class="menu_button">
           <img id="menu" src="img/menu_botton.png" alt="menu_button">
         </div>
+
+        
+        <nav class="hidden_menu">
+
+            <ul class="hidden_bois">
+                <li><a href="#">Länk 1</a> </li>
+                <li><a href="#">Länk 2</a> </li>
+                <li><a href="#">Länk 3</a> </li>
+                <li><a href="#">Länk 4</a> </li>
+                <li><a href="#">Länk 5</a> </li>
+                <li><a href="#">Länk 6</a> </li>
+            </ul>
+
+
+        </nav>
+
     </header>
 
     <main class="ma_m">
-        <figure id="bildspel">
-            <img src="" alt="bild i bildspel 1">
-            <img src="" alt="bild i bildspel 2">
-            <img src="" alt="bild i bildspel 3">
-        </figure>
+
+
+
+
+        <div>
+            <img class="mySlides" src= misc/desktop_1.jpg>
+            <img class="mySlides" src= misc/desktop_2.jpg>
+            <img class="mySlides" src= misc/desktop_3.jpg>   
+        </div>
 
 
         <article class="a1_m">
-            <h2>nice rubrik !</h2>
+            <h2>Välkommen till Fånarna på Farmen!</h2>
             <p>text o text o lite mer rolig text Lorem ipsum, dolor sit amet consectetur adipisicing it? Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur voluptates recusandae provident. Maxime commodi id ipsam consequatur laboriosam sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum perspiciatis ex ullam natus quo, eveniet nemo illo! Quo odit ad, nihil amet autem aliquam magni ut laboriosam voluptatum laudantium?</p>
         </article>
 
@@ -42,15 +63,14 @@
 
     <footer class="fo_m">
         
-       <p> copyright </p>                      
+       <p class="copyr"> copyright </p>                      
        
-       <div class="företag_1_div">företag </div>
-       <div class="företag_2_div">företag </div>
-       <div class="företag_3_div">företag </div>          
+       <div class="företag_1_div"><a href="#"><img src="misc/desktop_1.jpg" alt="Företagslogga"></a></div>
+       <div class="företag_2_div"><a href="#"><img src="misc/desktop_1.jpg" alt="Företagslogga"></a> </div>
+       <div class="företag_3_div"><a href="#"><img src="misc/desktop_1.jpg" alt="Företagslogga"></a> </div>          
        
-       <div class="footer_kontakt"><p>telefon: 000000 </p></div>
+       <section class="footer_kontakt"><p>telefon: 900000 </p> <p>Mail:<a href="#">Mail</a> </p> <p> <a href="#">Hitta hit</a> </p> </section>
     </footer>
-
 
 
 
@@ -59,7 +79,6 @@
 
 </div>
 
-<script src="js/main.js"></script>
 
 </body>
 </html> 

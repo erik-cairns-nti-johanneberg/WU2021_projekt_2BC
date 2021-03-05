@@ -8,12 +8,13 @@
     display: grid;
     grid-template-areas: 
     'he'
+    
     'ma'
     'fo';
     grid-template-columns: 100vw;
-    grid-template-rows: 11vh 100vh 9vh;
+    grid-template-rows: 11vh 100vh 10vh;
 }
-    
+
 
 .he_m{
     background-color: wheat;
@@ -42,28 +43,30 @@
     margin: 4px;
     margin-left: 5vw;
 }
-
+.hidden_menu{
+    display: none;
+}
 .ma_m{
     background-color: yellow;
     grid-area: ma;
 }
 
-#bildspel{
+.mySlides{
+    display: none;
     height: 30vh;
     width: 85vw;
     margin: 20px auto;
-    border: orchid 3px solid;
+}
+.a1_m{
+    height: fit-content;
+    width: 90vw;
+    margin: 0 auto;
+    border: orchid 3px none;   
 }
 
-.a1_m{
-    height: 42vh;
-    width: 80vw;
-    margin: 0 auto;
-    border: orchid 3px solid;   
-    
-}
 .a1_m > h2{
-    padding-left: 20vw;
+    display: block;
+    text-align: center;
     padding-top: 3vh;
 }
 
@@ -84,8 +87,13 @@
     'co f2 ko'
     'co f3 ko'
     ;
-    grid-template-columns: 30vw 35vw 35vw;
+    grid-template-columns: 30vw 25vw 45vw;
     grid-template-rows: repeat(3, 3vh)
+
+}
+
+.copyr{
+    margin: 1vh auto;
 }
 
 .företag_1_div{
@@ -100,9 +108,18 @@
 }
 
 .footer_kontakt{
+    margin-top: 0.5vh;
     grid-area: ko;
-    padding: 10px;
+    padding: 2px;
 }
+.fo_m > div{
+    margin-top: 0.5vh;
+}
+.fo_m > div > a> img{
+    width: 20vw;
+    height: 2.5vh;
+}
+
 /*Desktop*/
 @media screen and (max-width: 767px){
 
