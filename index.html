@@ -24,8 +24,8 @@
     </header>    
 
     <nav class= "hidden_nav">
-        <a href="#">Länk 1</a>
-        <a href="#">länk 2</a>
+        <a href="#">Start</a>
+        <a href="#">Om oss </a>
         <a href="#">länk 3</a>
         <a href="#">länk 4</a>
         <a href="#">länk 5</a>
@@ -64,6 +64,10 @@
                 x[myIndex-1].style.display = "block";  
                 setTimeout(carousel, 2000);                                  
             }
+
+            document.querySelector('.menu_button').addEventListener('click', function () {
+            document.querySelector('.hidden_nav').classList.toggle('active');});
+
     
         </script>
 
@@ -87,7 +91,7 @@
        <div class="företag_2_div"><a href="#"><img src="misc/desktop_1.jpg" alt="Företagslogga"></a> </div>
        <div class="företag_3_div"><a href="#"><img src="misc/desktop_1.jpg" alt="Företagslogga"></a> </div>          
        
-       <section class="footer_kontakt"><p>telefon: 900000 </p> <p>Mail:<a href="#">Mail</a> </p> <p> <a href="#">Hitta hit</a> </p> </section>
+       <section class="footer_kontakt"><p>Telefon: 031960045 </p> <p id="mail">Mail:<a href="Vill inte ge mail!"><br> Ankibob@gmail.com</a> </p> <p id="maps"> <a href="https://www.google.se/maps/place/F%C3%A5narna+p%C3%A5+Farmen/@57.7921915,11.8749682,17z/data=!3m1!4b1!4m5!3m4!1s0x464f8a5d80c2c919:0x432c2978cf9e232e!8m2!3d57.7921915!4d11.8771568" target="blank">Hitta hit</a> </p> </section>
     </footer>
 
 

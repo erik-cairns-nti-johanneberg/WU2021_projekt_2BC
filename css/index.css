@@ -51,19 +51,20 @@ p{
 
 .hidden_nav.active{
     display: grid;
+    grid-template-rows: repeat(6, 8vh);
     background-color: cornflowerblue;
-    grid-gap: 7vh;
+    grid-gap: 2vh;
     text-align: center;
+    font-size: 2vh;
+    padding-top: 2vh;
+    
+    
 }
 
-.show{
-    display: grid;
-    grid-gap: 1vh;
-    background-color:rgb(236, 233, 216); 
-    text-align: center;
-    font-size: 20px;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+.hidden_nav>a{
+    text-decoration: none;
+    font-size: 4.5vh;
+    font-weight: 600;
 }
 
 .ma_m{
@@ -75,13 +76,14 @@ p{
     display: none;
     height: 30vh;
     width: 85vw;
-    margin: 20px auto;
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 .a1_m{
     height: fit-content;
     width: 90vw;
-    margin: 0 auto;
-    border: orchid 3px none;   
+    margin: 0 auto;  
 }
 
 .a1_m > h2{
@@ -94,12 +96,12 @@ p{
     padding-left: 6vw;
     padding-top: 2vh;
     padding-right: 6vw;
-    margin-bottom: 5px;
+    padding-bottom: 1vh;
 }
 
 
 .fo_m{
-    background-color: blue;
+    background-color: indigo;
     grid-area: fo;
     display: flex;
     display: grid;
@@ -109,8 +111,7 @@ p{
     'co f3 ko'
     ;
     grid-template-columns: 30vw 25vw 45vw;
-    grid-template-rows: repeat(3, 3vh);
-    
+    grid-template-rows: repeat(3, 4.5vh);
     bottom: 0;
     width: 100%;
     
@@ -136,17 +137,27 @@ p{
     grid-area: ko;
     padding: 2px;
 }
+.footer_kontakt >p > a{
+    color: black;
+    font-size: 2vh;
+    text-decoration: none;
+}
+#maps > a{
+    font-size: 2.5vh;
+    color: blue;
+}
 .fo_m > div{
     margin-top: 0.5vh;
 }
 .fo_m > div > a> img{
     width: 20vw;
     height: 2.5vh;
+
 }
 
 /*Desktop*/
 @media screen and (max-width: 767px){
-
+    
 
 }
 
