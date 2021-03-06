@@ -9,9 +9,6 @@ p{
     font-size: 2.5vh;
 }
 /*mobile @media screen and (max-width: 767px){*/ 
-    
-
-
 
 .he_m{
     background-color: wheat;
@@ -155,8 +152,141 @@ p{
 
 }
 
+
+
+
+
 /*Desktop*/
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
+
+    .he_m{
+        background-color: wheat;
+        grid-area: he;
+        display: flex;
+        height: 12vh;
+        justify-content: space-around;
+    }
+    
+    .logga{
+        width: 70vw;
+        height: 7vh;
+        justify-self: center;
+        margin: 2vh 0 auto;
+    } 
+    
+    .menu_button{
+        display: none;
+    }
+    .hidden_nav{
+        display: none;
+    }
+    
+    .desknav{
+        display: grid;
+        grid-template-areas: 
+        'a1 a1 a1'
+        'a1 a1 a1';
+        grid-template-rows: repeat(2, 3vh);
+        grid-template-columns: repeat(3, 32vw);
+        background-color: cornflowerblue;
+        grid-gap: 1vh;
+        text-align: center;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+    
+    }
+    .desknav>a{
+        text-decoration: none;
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+    .ma_m{
+        background-color: yellow;
+        grid-area: ma;
+    }
+    
+    .mySlides{
+        display: none;
+        height: 30vh;
+        width: 85vw;
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .a1_m{
+        height: fit-content;
+        width: 90vw;
+        margin: 0 auto;  
+    }
+    
+    .a1_m > h2{
+        display: block;
+        text-align: center;
+        padding-top: 3vh;
+    }
+    
+    .a1_m > p{
+        padding-left: 6vw;
+        padding-top: 2vh;
+        padding-right: 6vw;
+        padding-bottom: 1vh;
+    }
+    
+    
+    .fo_m{
+        background-color: indigo;
+        grid-area: fo;
+        display: flex;
+        display: grid;
+        grid-template-areas: 
+        'co f1 ko'
+        'co f2 ko'
+        'co f3 ko'
+        ;
+        grid-template-columns: 30vw 25vw 45vw;
+        grid-template-rows: repeat(3, 4.5vh);
+        bottom: 0;
+        width: 100%;
+        
+    }
+    
+    .copyr{
+        margin: 1vh auto;
+    }
+    
+    .företag_1_div{
+        grid-area: f1;
+    }
+    .företag_2_div{
+        grid-area: f2;
+    }
+    
+    .företag_3_div{
+        grid-area: f3;
+    }
+    
+    .footer_kontakt{
+        margin-top: 0.5vh;
+        grid-area: ko;
+        padding: 2px;
+    }
+    .footer_kontakt >p > a{
+        color: black;
+        font-size: 2vh;
+        text-decoration: none;
+    }
+    #maps > a{
+        font-size: 2.5vh;
+        color: blue;
+    }
+    .fo_m > div{
+        margin-top: 0.5vh;
+    }
+    .fo_m > div > a> img{
+        width: 20vw;
+        height: 2.5vh;
+    
+    }
     
 
 }
