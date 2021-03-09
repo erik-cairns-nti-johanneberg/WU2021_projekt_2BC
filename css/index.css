@@ -1,5 +1,6 @@
 *{
     margin: 0% ;
+    box-sizing: border-box;
 }
 body{
     position: relative;
@@ -107,7 +108,7 @@ p{
     'co f2 ko'
     'co f3 ko'
     ;
-    grid-template-columns: 30vw 25vw 45vw;
+    grid-template-columns: 30% 25% 45%;
     grid-template-rows: repeat(3, 4.5vh);
     bottom: 0;
     width: 100%;
@@ -152,6 +153,9 @@ p{
 
 }
 
+.fig{
+    display: none;
+}
 
 
 
@@ -186,8 +190,8 @@ p{
         grid-template-areas: 
         'a1 a1 a1'
         'a1 a1 a1';
-        grid-template-rows: repeat(2, 3vh);
-        grid-template-columns: repeat(3, 32vw);
+        grid-template-rows: repeat(2, 4vh);
+        grid-template-columns: repeat(3, 32%);
         background-color: cornflowerblue;
         grid-gap: 1vh;
         text-align: center;
@@ -197,7 +201,7 @@ p{
     }
     .desknav>a{
         text-decoration: none;
-        font-size: 2.5vh;
+        font-size: 3vh;
         font-weight: 600;
     }
     .ma_m{
@@ -207,16 +211,13 @@ p{
     
     .mySlides{
         display: none;
-        height: 30vh;
+        height: 50vh;
         width: 85vw;
         padding-top: 5vh;
         margin-left: auto;
         margin-right: auto;
     }
     
-    .mySlides>#bild_1{
-        display: block;
-    }
     .a1_m{
         height: fit-content;
         width: 90vw;
@@ -235,8 +236,29 @@ p{
         padding-right: 6vw;
         padding-bottom: 1vh;
     }
+
+    .fig{
+        
+        background-color: aquamarine;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .deskbild{
+        margin: 30px;
+        height: 50vh;
+        width: 40vw;
+        border: black solid;
+    }
     
-    
+    .desktext{
+        width: 30vw;
+        border: black solid;
+        margin: 30px;
+        padding: 30px;
+        
+    }
+
     .fo_m{
         background-color: indigo;
         grid-area: fo;
@@ -247,7 +269,7 @@ p{
         'co f2 ko'
         'co f3 ko'
         ;
-        grid-template-columns: 30vw 25vw 45vw;
+        grid-template-columns: 30% 25% 45%;
         grid-template-rows: repeat(3, 4.5vh);
         bottom: 0;
         width: 100%;

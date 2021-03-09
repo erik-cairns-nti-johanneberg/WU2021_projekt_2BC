@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
 
-    <script src=js\index.js ></script>
+    
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
+    
 </head>
 <body>
 <!-- mobile_1 -->
@@ -49,47 +49,25 @@
             <img id="bild_3" class="mySlides" src= misc/desktop_3.jpg>   
         </div>
 
-        <script> 
-        var window=$(window).width();
-            if (window > 900) {
-                var myIndex = 0;                                                          
-                carousel();                                                     
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 3500);                                  
-                }
-
-                document.querySelector('.menu_button').addEventListener('click', function () {
-                document.querySelector('.hidden_nav').classList.toggle('active');});
-
-            }
-            else{
-                stop
-            }    
-            
-        </script>
-
 
         <article class="a1_m">
             <h2>Välkommen till Fånarna på Farmen!</h2>
             <p>text o text o lite mer eeeeeeeeeeeeeeeeeeeeeex rolig text Lorem ipsum, dolor sit amet consectetur adipisicing it? Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur voluptates recusandae provident. Maxime commodi id ipsam consequatur laboriosam sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum perspiciatis ex ullam natus quo, eveniet nemo illo! Quo odit ad, nihil amet autem aliquam magni ut laboriosam voluptatum laudantium?</p>
 
         </article>
+        
+   
+        <figure class="fig">
+            <img class="deskbild" src="./misc/desktop_1.jpg" alt="">
+            <article class="desktext"><h4>Rolig text sak</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. CLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum temporibus placeat error quae qui quibusdam, exercitationem dolorem, commodi nostrum doloremque et necessitatibus deleniti quo numquam quasi minima, illo non nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem accusamus hic necessitatibus dolores atque, illo itaque facere repellat possimus?</article>
+        </figure>
+    
 
-
-        <figure></figure>
-        <article></article>
-
-        <figure></figure>
-        <article></article>
+    
+        <figure class="fig">
+            <article class="desktext"><h4>Rolig text sak</h4>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum, ut optio totam illo tempore reprehenderit omnis quibusdam officiis! Error ut reiciendis ipsam neque aperiam pariatur molestiae nobis dolor earum? sit amet consectetur adipisicing elit. Exercitationem accusamus hic necessitatibus dolores atque, illo itaque facere repellat deserunt nemo error, dolorem laboriosam recusandae commodi adipisci ex. Reiciendis, quos possimus?</article>
+            <img class="deskbild" src="./misc/desktop_2.jpg" alt="">
+        </figure>
 
     </main>
 
@@ -109,6 +87,6 @@
 
 </div>
 
-
+<script src="js/index.js"></script>
 </body>
 </html> 
