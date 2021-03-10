@@ -97,6 +97,9 @@ p{
     padding-bottom: 1vh;
 }
 
+#nytt_bild{
+    display: none;
+}
 
 .fo_m{
     background-color: indigo;
@@ -163,17 +166,23 @@ p{
 /*Desktop*/
 @media screen and (min-width: 767px){
 
+    .fade{
+        background-image: url(../img/fade_background.jpg) ;
+        background-size: 100vw 45vh;
+    }
+
     .he_m{
-        background-color: wheat;
+        background-color: transparent;
         grid-area: he;
         display: flex;
-        height: 12vh;
+        height: fit-content;
         justify-content: space-around;
+        padding-bottom: 1vh;
     }
     
     .logga{
-        width: 70vw;
-        height: 7vh;
+        width: 25vw;
+        height: auto;
         justify-self: center;
         margin: 2vh 0 auto;
     } 
@@ -187,35 +196,36 @@ p{
     
     .desknav{
         display: grid;
+        background-color: unset;
         grid-template-areas: 
         'a1 a1 a1'
         'a1 a1 a1';
-        grid-template-rows: repeat(2, 4vh);
+        grid-template-rows: repeat(2, 5vh);
         grid-template-columns: repeat(3, 32%);
-        background-color: cornflowerblue;
-        grid-gap: 1vh;
+        grid-gap: 2vh;
         text-align: center;
-        padding-top: 0.5vh;
-        padding-bottom: 0.5vh;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
     
     }
     .desknav>a{
         text-decoration: none;
-        font-size: 3vh;
+        font-size: 4vh;
         font-weight: 600;
+        color: black;
     }
     .ma_m{
-        background-color: yellow;
+        background-color:#FBF0DF;
         grid-area: ma;
     }
     
-    .mySlides{
-        display: none;
-        height: 50vh;
-        width: 85vw;
-        padding-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
+    #nytt_bild{
+    display: block;
+    height: 80vh;
+    width: 85vw;
+    padding-top: 5vh;
+    margin-left: 5vw;
+    object-fit: cover;
     }
     
     .a1_m{
@@ -239,9 +249,10 @@ p{
 
     .fig{
         
-        background-color: aquamarine;
+        
         display: flex;
-        margin-top: 30px;
+        margin-top: 15px;
+        padding-bottom: 15px;
     }
 
     .deskbild{
