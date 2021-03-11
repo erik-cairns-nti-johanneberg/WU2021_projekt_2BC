@@ -68,7 +68,6 @@ p{
 
 .ma_m{
     background-color: #FBF0DF;
-    grid-area: ma;
 }
 
 .mySlides{
@@ -91,6 +90,7 @@ p{
     display: block;
     text-align: center;
     padding-top: 3vh;
+    font-size: 5vh;
 }
 
 .a1_m > p{
@@ -107,18 +107,13 @@ p{
 .fo_m{
     background-color:#664438;
     grid-area: fo;
-    display: flex;
     display: grid;
-    grid-template-areas: 
-    'co f1 ko'
-    'co f2 ko'
-    'co f3 ko'
-    ;
-    grid-template-columns: 30% 25% 45%;
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(3, 4.5vh);
     bottom: 0;
     width: 100%;
     padding-top: 1vh;
+
 }
 
 .fb> img{
@@ -130,20 +125,9 @@ p{
     margin: 1vh auto;
 }
 
-.företag_1_div{
-    grid-area: f1;
-}
-.företag_2_div{
-    grid-area: f2;
-}
-
-.företag_3_div{
-    grid-area: f3;
-}
-
 .footer_kontakt{
     margin-top: 0.5vh;
-    grid-area: ko;
+    grid-column-start: 3;
     padding: 2px;
 }
 .footer_kontakt >p > a{
@@ -157,7 +141,12 @@ p{
     color:  #FBF0DF;
     font-size: 2.5vh;
 }
+#maps{
+    grid-column-start: 3;
+    margin-top: 2vh;
+}
 #maps > a{
+    
     font-size: 2.5vh;
     text-decoration: underline;
     color:  #FBF0DF;
@@ -184,7 +173,43 @@ p{
     padding-right: 2vw;
     color: #FBF0DF;
 }
+/*1
 
+*/
+.fig_2{
+    height: fit-content;
+    width: 80%;
+    padding-left: 8vw;
+    padding-top: 3vh;
+    align-self: center;
+    margin-left: 10vw;
+    
+}
+.a1_m>.bara_synas_m{
+    align-self: center;
+    padding-left: 24vw;
+    padding-top: 5vh;
+}
+.fig_2>h3{
+padding-bottom: 1vh;
+}
+.deskbild_2{
+    height: 40vh;
+    width: 65vw;
+    margin-bottom: 1vh;
+    object-fit: cover;
+}
+
+.mob_text{
+    font-size: 20px;
+    padding-bottom: 4vh;
+}
+.bara_synas_d{
+    display: none;
+}
+.mob_text > h3{
+    padding-bottom: 2vh;
+}
 /*Desktop*/
 @media screen and (min-width: 767px){
 
@@ -247,6 +272,7 @@ p{
     width: 85vw;
     padding-top: 5vh;
     margin-left: 5vw;
+    margin-bottom: 10vh;
     object-fit: cover;
     }
     
@@ -275,14 +301,14 @@ p{
 
     .fig{
         display: flex;
-        margin-top: 10vh;
-        padding-bottom: 15px;
+        margin-top: 3vh;
         align-items: center;
         justify-content: center;
+        padding-bottom: 13vh;
     }
 
     .deskbild{
-        margin: 30px;
+        margin: 3vh;
         height: 50vh;
         width: 49vw;
         border: black solid;
@@ -297,19 +323,20 @@ p{
         font-size: 20px;
         
     }
-
+    .desktext > h3{
+        padding-bottom: 2vh;
+    }
     .fo_m{
         background-color: #664438;
         grid-area: fo;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
         bottom: 0;
         width: 100%;
-        
     }
     
     .footer_kontakt{
         margin-top: 0.5vh;
-        grid-area: ko;
         padding: 2px;
     }
     .footer_kontakt >p{
@@ -322,6 +349,9 @@ p{
         font-size: 1.5vw;
         text-decoration: underline;
     }
+    #maps {
+        grid-column-start: 4;
+    }
     #maps > a{
         font-size: 1.5vw;
         color: #FBF0DF;
@@ -333,8 +363,7 @@ p{
     padding-left: 15vw;
    }
    .fo_m> .fb_sok{
-       padding-top: 5vh;
-       padding-right: 20vw;
+       padding-top: 4vh;
        color: #FBF0DF;
    }
     .fo_m> .bigman{
@@ -342,6 +371,41 @@ p{
     color: #FBF0DF;
     padding-top: 3vh;
     padding-right: 2vw;
+    }
+    .a1_m>.bara_synas_m{
+        display: none;
+    }
+
+    .bara_synas_d{
+        display: block;
+    }
+    
+    .fig_2{
+        display: flex;
+        padding-top: 3vh;
+        padding-bottom: 4vh;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 16vh;
+    }
+    .deskbild_2{
+        margin-top: 2vh;
+        height: 65vh;
+        max-width: 40vw;
+        object-fit: cover;
+        border: black solid;
+    }
+
+    .mob_text{
+        width: 35vw;
+        text-align: center;
+        margin: 30px;
+        padding: 30px;
+        font-size: 20px;
+
+    }
+    .fig_2>h3{
+        display: none;
     }
 
 }
