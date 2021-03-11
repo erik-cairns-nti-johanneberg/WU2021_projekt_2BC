@@ -148,12 +148,19 @@ p{
 }
 .footer_kontakt >p > a{
     color: black;
-    font-size: 2vh;
-    text-decoration: none;
+    font-size: 2.5vh;
+    text-decoration: underline;
+    color: #FBF0DF;
+}
+
+.footer_kontakt>p{
+    color:  #FBF0DF;
+    font-size: 2.5vh;
 }
 #maps > a{
     font-size: 2.5vh;
     text-decoration: underline;
+    color:  #FBF0DF;
 }
 .fo_m > div{
     margin-top: 0.5vh;
@@ -220,7 +227,7 @@ p{
         grid-gap: 2vh;
         text-align: center;
         padding-top: 3vh;
-        padding-bottom: 2vh;
+        padding-bottom: 5vh;
     
     }
     .desknav>a{
@@ -244,6 +251,7 @@ p{
     }
     
     .a1_m{
+        padding-top: 10vh;
         height: fit-content;
         width: 90vw;
         margin: 0 auto;  
@@ -253,13 +261,16 @@ p{
         display: block;
         text-align: center;
         padding-top: 3vh;
+        padding-bottom: 3vh;
+        font-size: 5vw;
     }
     
     .a1_m > p{
-        padding-left: 6vw;
+        padding-left: 15vw;
         padding-top: 2vh;
-        padding-right: 6vw;
+        padding-right: 15vw;
         padding-bottom: 1vh;
+        font-size: 20px;
     }
 
     .fig{
@@ -283,6 +294,7 @@ p{
         text-align: center;
         margin: 30px;
         padding: 30px;
+        font-size: 20px;
         
     }
 
@@ -300,14 +312,19 @@ p{
         grid-area: ko;
         padding: 2px;
     }
-    .footer_kontakt >p > a{
-        color: black;
-        font-size: 2vh;
+    .footer_kontakt >p{
+        color:#FBF0DF;
+        font-size: 1.5vw;
         text-decoration: none;
     }
+    .footer_kontakt >p > a{
+        color:#FBF0DF;
+        font-size: 1.5vw;
+        text-decoration: underline;
+    }
     #maps > a{
-        font-size: 2.5vh;
-        color: black;
+        font-size: 1.5vw;
+        color: #FBF0DF;
     }
 
    .fb> img{
