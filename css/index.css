@@ -12,7 +12,7 @@ p{
 /*mobile @media screen and (max-width: 767px){*/ 
 
 .he_m{
-    background-color: wheat;
+    background-color:#664438;
     grid-area: he;
     display: flex;
     height: 12vh;
@@ -50,7 +50,7 @@ p{
 .hidden_nav.active{
     display: grid;
     grid-template-rows: repeat(6, 8vh);
-    background-color: cornflowerblue;
+    background-color: #AC8474;
     grid-gap: 2vh;
     text-align: center;
     font-size: 2vh;
@@ -61,12 +61,13 @@ p{
 
 .hidden_nav>a{
     text-decoration: none;
+    color: #FBF0DF;
     font-size: 4.5vh;
     font-weight: 600;
 }
 
 .ma_m{
-    background-color: yellow;
+    background-color: #FBF0DF;
     grid-area: ma;
 }
 
@@ -77,11 +78,13 @@ p{
     padding-top: 5vh;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 .a1_m{
     height: fit-content;
     width: 90vw;
     margin: 0 auto;  
+    padding-bottom: 3vh;
 }
 
 .a1_m > h2{
@@ -102,7 +105,7 @@ p{
 }
 
 .fo_m{
-    background-color: indigo;
+    background-color:#664438;
     grid-area: fo;
     display: flex;
     display: grid;
@@ -115,9 +118,14 @@ p{
     grid-template-rows: repeat(3, 4.5vh);
     bottom: 0;
     width: 100%;
-    
+    padding-top: 1vh;
 }
 
+.fb> img{
+    height: 10vh;
+    padding-right: 2vw;
+    padding-left: 5vw;
+   }
 .copyr{
     margin: 1vh auto;
 }
@@ -145,7 +153,7 @@ p{
 }
 #maps > a{
     font-size: 2.5vh;
-    color: blue;
+    text-decoration: underline;
 }
 .fo_m > div{
     margin-top: 0.5vh;
@@ -160,8 +168,15 @@ p{
     display: none;
 }
 
+.fo_m> .bigman{
+    display: none;
+}
 
-
+.fo_m> .fb_sok{
+    padding-top: 1vh;
+    padding-right: 2vw;
+    color: #FBF0DF;
+}
 
 /*Desktop*/
 @media screen and (min-width: 767px){
@@ -275,32 +290,9 @@ p{
         background-color: #664438;
         grid-area: fo;
         display: flex;
-        display: grid;
-        grid-template-areas: 
-        'co f1 ko'
-        'co f2 ko'
-        'co f3 ko'
-        ;
-        grid-template-columns: 30% 25% 45%;
-        grid-template-rows: repeat(3, 4.5vh);
         bottom: 0;
         width: 100%;
         
-    }
-    
-    .copyr{
-        margin: 1vh auto;
-    }
-    
-    .företag_1_div{
-        grid-area: f1;
-    }
-    .företag_2_div{
-        grid-area: f2;
-    }
-    
-    .företag_3_div{
-        grid-area: f3;
     }
     
     .footer_kontakt{
@@ -315,17 +307,25 @@ p{
     }
     #maps > a{
         font-size: 2.5vh;
-        color: blue;
+        color: black;
     }
-    .fo_m > div{
-        margin-top: 0.5vh;
+
+   .fb> img{
+    height: 13vh;
+    padding-right: 2vw;
+    padding-left: 15vw;
+   }
+   .fo_m> .fb_sok{
+       padding-top: 5vh;
+       padding-right: 20vw;
+       color: #FBF0DF;
+   }
+    .fo_m> .bigman{
+    font-size: 5vh;
+    color: #FBF0DF;
+    padding-top: 3vh;
+    padding-right: 2vw;
     }
-    .fo_m > div > a> img{
-        width: 20vw;
-        height: 2.5vh;
-    
-    }
-    
 
 }
 
