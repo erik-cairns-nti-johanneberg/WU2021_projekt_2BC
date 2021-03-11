@@ -387,6 +387,10 @@ padding-bottom: 1vh;
         align-items: center;
         justify-content: center;
         padding-bottom: 16vh;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70vw;
+        padding-left: 0;
     }
     .deskbild_2{
         margin-top: 2vh;
@@ -407,6 +411,22 @@ padding-bottom: 1vh;
     .fig_2>h3{
         display: none;
     }
+    #aw{
+        display: grid;
+        grid-template-columns: 30vw 40vw;
+        grid-template-rows: 65vh;
+    }
 
+    #grill_gari{
+        grid-column-start: 2;
+        margin-right: 30vw;
+    }
+    #grill_gar_text{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding: 30px;
+        width: auto;
+        
+    }
 }
 
