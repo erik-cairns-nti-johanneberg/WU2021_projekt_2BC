@@ -198,6 +198,7 @@ padding-bottom: 1vh;
     width: 65vw;
     margin-bottom: 1vh;
     object-fit: cover;
+    border: black solid;
 }
 
 .mob_text{
