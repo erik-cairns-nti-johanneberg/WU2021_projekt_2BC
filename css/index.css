@@ -211,6 +211,34 @@ padding-bottom: 1vh;
 .mob_text > h3{
     padding-bottom: 2vh;
 }
+.hi_no_ai{
+    display: none;
+}
+#dabigindaback{
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-image: url(/img/blekfesk.jpg);
+    background-size: cover;
+}
+
+#dabigindaback>article{
+    height: fit-content;
+    width: 80%;
+    border: black solid;
+    margin: auto;
+    background-color:#664438;
+    opacity: 85%;
+    color: #FBF0DF;
+    text-align: center;
+}
+
+#dabigindaback>article>p{
+padding-top: 3vh;
+}
+
 /*Desktop*/
 @media screen and (min-width: 767px){
 
@@ -429,5 +457,37 @@ padding-bottom: 1vh;
         width: auto;
         
     }
+    #dabigindaback{
+        background-color: #FBF0DF;
+        background-image: none;
+        height: auto;
+    }
+    #dabigindaback> article {
+        background-color: transparent;
+        color: black;
+        border: none;
+        padding: 0;
+    }
+    #golf{
+        width: 80vw;
+        height: 80vh;
+        object-fit: cover;
+        border: black solid;
+        margin: 3vh auto;
+    }
+
+    #hi_in_ai{
+        display: none;
+    }
+
+    .hi_no_ai{
+        display: block;
+        text-align: center;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        font-size: 5vw;
+    }
+
+
 }
 
