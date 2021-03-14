@@ -239,6 +239,61 @@ padding-bottom: 1vh;
 padding-top: 3vh;
 }
 
+.om_foretaget{
+    width: 80vw;
+    height: fit-content;
+    border: black solid;
+    margin: 0 auto;  
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+.om_foretaget>h3{
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+/*---*/
+.transportfig{
+    height: fit-content;
+    width: 80%; 
+   
+    margin: auto;
+    padding-bottom: 5vh;
+    border: black solid;
+    position: relative;
+    margin-bottom: 5vh;
+}
+.fröetagsihittabild{
+    height: 5vh;
+    width: 35vw;
+
+    display: inline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    border: black solid;
+}
+
+.end_desk{
+    display: none;
+}
+.transp_rubrik{
+    text-align: center;
+}
+
+.sec{
+    height: fit-content;
+    align-items: center;
+    margin: auto;
+    border: black solid;
+}
+.privat_trans{
+    border: black solid;
+    width: 90%;
+    margin: auto;
+}
+.karta{}
 /*Desktop*/
 @media screen and (min-width: 767px){
 
@@ -486,6 +541,9 @@ padding-top: 3vh;
         padding-top: 3vh;
         padding-bottom: 3vh;
         font-size: 5vw;
+    }
+    .end_desk{
+        display: inline;
     }
 
 
