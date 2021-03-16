@@ -266,7 +266,7 @@ padding-top: 3vh;
 .fröetagsihittabild{
     height: 5vh;
     width: 35vw;
-
+    background-color: #664438;
     display: inline;
     position: absolute;
     right: 0;
@@ -286,14 +286,25 @@ padding-top: 3vh;
     height: fit-content;
     align-items: center;
     margin: auto;
-    border: black solid;
+    padding-bottom: 2vh;
 }
 .privat_trans{
-    border: black solid;
+    
+    text-align: center;
     width: 90%;
     margin: auto;
 }
-.karta{}
+.karta{
+    height: 35vh;
+    width: 80vw;
+    margin: 3vh auto;
+}
+#go_k{
+    width: 80vw;
+    height: 35vh;
+    border: black solid;
+    
+}
 /*Desktop*/
 @media screen and (min-width: 767px){
 
