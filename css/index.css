@@ -312,6 +312,31 @@ padding-top: 3vh;
     border: black solid;
     
 }
+.visa_efter_swipe{
+    display: none;
+}
+.visa_efter_swipe.activatet{
+    display: block;
+}
+.swipe_bild{
+    border: black solid 5px;
+    margin: auto;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+#anki_bild{
+    border: black solid ;
+
+}
+#bob_bild{
+    border: black solid ;
+
+}
+
+
 /*Desktop*/
 @media screen and (min-width: 767px){
 
@@ -615,17 +640,37 @@ padding-top: 3vh;
         left: 0;
         bottom: 0;
     }
-    /* 
-    #grill_gari{
-        grid-column-start: 2;
-        margin-right: 30vw;
+    .visa_efter_swipe{
+        display: block;
     }
-    #grill_gar_text{
+    .griddiv{
+        display: grid;
+        grid-template-areas: 
+        'an bo'
+        ;
+        grid-template-columns: 50% 50%;
+    }
+    .slide_bildtext{
+      
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10vh;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    #anki_bild{
+        border: black solid 5px;
         grid-column-start: 1;
-        grid-row-start: 1;
-        padding: 30px;
-        width: auto;
-        
-    }*/
+        width: 28vw;
+    }
+    #bob_bild{
+        border: black solid 5px;
+        grid-column-start: 1;
+        width: 28vw;
+    }
+    .namn{
+        font-size: 40px;
+        padding-top: 1vh;
+    }
+    
 }
-
