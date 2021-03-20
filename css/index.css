@@ -256,14 +256,14 @@ padding-top: 3vh;
 .transportfig{
     height: fit-content;
     width: 80%; 
-   
+    padding: 5vw;
     margin: auto;
     padding-bottom: 5vh;
     border: black solid;
     position: relative;
     margin-bottom: 5vh;
 }
-.fröetagsihittabild{
+.froetagsihittabild{
     height: 5vh;
     width: 35vw;
     background-color: #664438;
@@ -275,7 +275,14 @@ padding-top: 3vh;
     border: black solid;
 }
 
+
 .end_desk{
+    display: none;
+}
+.bussbild{
+    display: none;
+}
+.hellibild{
     display: none;
 }
 .transp_rubrik{
@@ -557,6 +564,68 @@ padding-top: 3vh;
         display: inline;
     }
 
+    .transportfig{
+        height: fit-content;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 2vh;
 
+        padding-bottom: 5vh;
+        border: black solid;
+        margin-bottom: 5vh;
+        display: grid;
+    }
+    
+    .bussbild{
+        grid-column-start: 2;
+        border: black solid;
+        width: 40vw;
+        height: 40vh;
+        margin-left: 5vw;
+        display: inline;
+    }
+
+    .transportarticle{
+        padding-left: 5vw;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .froetagsihittabild{
+        width: 40vw;
+        height: 10vh;
+    }
+
+    .hellibild{
+        grid-column-start: 1;
+        border: black solid;
+        width: 40vw;
+        height: 40vh;
+        margin-right: 5vw;
+        display: inline;
+    }
+    
+    .transportarticle_2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #desktop_foretaglogg_till_v{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    /* 
+    #grill_gari{
+        grid-column-start: 2;
+        margin-right: 30vw;
+    }
+    #grill_gar_text{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding: 30px;
+        width: auto;
+        
+    }*/
 }
 
