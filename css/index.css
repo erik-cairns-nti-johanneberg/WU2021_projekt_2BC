@@ -313,13 +313,11 @@ padding-top: 3vh;
     
 }
 .visa_efter_swipe{
-    display: none;
-}
-.visa_efter_swipe.activatet{
-    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5vh;
 }
 .swipe_bild{
-    border: black solid 5px;
     margin: auto;
     width: 100%;
     padding-top: 3vh;
@@ -672,5 +670,24 @@ padding-top: 3vh;
         font-size: 40px;
         padding-top: 1vh;
     }
+    #ska_vara_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50vh;
+    }
+    #gird_till_brevid{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    #gridd_till_sist{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+       
     
 }

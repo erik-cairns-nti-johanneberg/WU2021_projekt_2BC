@@ -26,4 +26,5 @@ function slideshow(){
 }
 
 
+
 window.addEventListener('resize', slideshow);
