@@ -9,7 +9,8 @@ function slideshow(){
         console.log("debuggsak")
         
         var myIndex = 0;                                                          
-        carousel();                                                     
+        carousel();  
+
         function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");

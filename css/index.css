@@ -19,11 +19,11 @@ p{
 }
 
 .logga{
-    width: 70vw;
+    width: 50vw;
     height: 7vh;
     justify-self: flex-start;
     margin-top: 10px;
-    margin-right: 6px;
+    margin-right: 25vw;
     margin-bottom: 5px;
     margin-left: 10px;
 } 
@@ -242,7 +242,6 @@ padding-top: 3vh;
 .om_foretaget{
     width: 80vw;
     height: fit-content;
-    border: black solid;
     margin: 0 auto;  
     padding-bottom: 3vh;
     text-align: center;
@@ -338,6 +337,12 @@ padding-top: 3vh;
 /*Desktop*/
 @media screen and (min-width: 767px){
 
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 5vw;
+    }
     .fade{
         background-image: url(../img/fade_background.jpg) ;
         background-size: 100vw 45vh;
@@ -579,7 +584,7 @@ padding-top: 3vh;
     .hi_no_ai{
         display: block;
         text-align: center;
-        padding-top: 3vh;
+        padding-top: 13vh;
         padding-bottom: 3vh;
         font-size: 5vw;
     }
@@ -673,7 +678,7 @@ padding-top: 3vh;
     #ska_vara_grid{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50vh;
+        grid-template-rows: 40vh;
     }
     #gird_till_brevid{
         grid-column-start: 1;
