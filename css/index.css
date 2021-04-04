@@ -61,7 +61,7 @@ p{
 
 .hidden_nav>a{
     text-decoration: none;
-    color: #FBF0DF;
+    color: #000000;
     font-size: 4.5vh;
     font-weight: 600;
 }
@@ -359,7 +359,7 @@ padding-top: 3vh;
     
     .logga{
         width: 25vw;
-        height: auto;
+        height: 12vh;
         justify-self: center;
         margin: 2vh 0 auto;
     } 
@@ -600,7 +600,7 @@ padding-top: 3vh;
         padding-top: 2vh;
 
         padding-bottom: 5vh;
-        border: black solid;
+        border: none;
         margin-bottom: 5vh;
         display: grid;
     }
