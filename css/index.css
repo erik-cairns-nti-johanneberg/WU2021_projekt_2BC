@@ -398,7 +398,7 @@ padding-top: 3vh;
     
     #nytt_bild{
     display: block;
-    height: 80vh;
+    height: auto;
     width: 85vw;
     padding-top: 5vh;
     margin-left: 5vw;
@@ -570,8 +570,8 @@ padding-top: 3vh;
         padding: 0;
     }
     #golf{
-        width: 80vw;
-        height: 80vh;
+        width: 50vw;
+        height: auto;
         object-fit: cover;
         border: black solid;
         margin: 3vh auto;
@@ -608,10 +608,11 @@ padding-top: 3vh;
     .bussbild{
         grid-column-start: 2;
         border: black solid;
-        width: 40vw;
-        height: 40vh;
+        width: 30vw;
+        height: auto;
         margin-left: 5vw;
         display: inline;
+        margin-right: 5vw;
     }
 
     .transportarticle{
@@ -621,16 +622,19 @@ padding-top: 3vh;
     }
 
     .froetagsihittabild{
-        width: 40vw;
+        width: 30vw;
         height: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     .hellibild{
         grid-column-start: 1;
         border: black solid;
-        width: 40vw;
-        height: 40vh;
+        width: 30vw;
+        height: auto;
         margin-right: 5vw;
+        margin-left: 5vw;
         display: inline;
     }
     
