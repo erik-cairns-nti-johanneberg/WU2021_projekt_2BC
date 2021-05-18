@@ -262,9 +262,12 @@ padding-top: 3vh;
     position: relative;
     margin-bottom: 5vh;
 }
+body > div > main > figure:nth-child(2) > article > p:nth-child(2), body > div > main > figure:nth-child(3) > article > p:nth-child(2){
+    padding-bottom: 3vw;
+}
 .froetagsihittabild{
-    height: 5vh;
-    width: 35vw;
+    height: auto;
+    width: 30vw;
     background-color: #664438;
     display: inline;
     position: absolute;
@@ -622,7 +625,7 @@ padding-top: 3vh;
     }
 
     .froetagsihittabild{
-        width: 30vw;
+        width: auto;
         height: 10vh;
         margin-left: 5vw;
         margin-right: 5vw;
