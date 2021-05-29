@@ -19,7 +19,7 @@ p{
 }
 
 .logga{
-    width: 50vw;
+    width: auto;
     height: 7vh;
     justify-self: flex-start;
     margin-top: 10px;
@@ -36,7 +36,8 @@ p{
     width: 15vw;
     height: 8vh;
     margin: 4px;
-    margin-left: 5vw;
+    position: absolute;
+    right: 1vw;
 }
 
 .desknav{
@@ -361,7 +362,7 @@ body > div > main > figure:nth-child(2) > article > p:nth-child(2), body > div >
     }
     
     .logga{
-        width: 25vw;
+        width: auto;
         height: 12vh;
         justify-self: center;
         margin: 2vh 0 auto;
